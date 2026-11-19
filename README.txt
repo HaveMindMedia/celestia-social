@@ -1,0 +1,1 @@
+Public images for Celestia's own social posts, served at https://havemindmedia.github.io/celestia-social/ (Instagram and TikTok fetch images by URL). Written by the poster bot (HaveMindMedia/celestia-poster). Nothing private here.

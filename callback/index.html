@@ -1,0 +1,12 @@
+<!doctype html><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1">
+<title>Celestia Poster Connected</title>
+<style>:root{--bg:#0b0e1a;--fg:#f0e8d6;--gold:#d6b25e}body{margin:0;padding:40px 16px;background:var(--bg);color:var(--fg);font:18px/1.5 system-ui;text-align:center}code{display:block;margin:16px auto;max-width:600px;padding:12px;background:#151a2e;color:var(--gold);word-break:break-all;user-select:all}</style>
+<h1 style="color:var(--gold)">Celestia Poster</h1>
+<p id=msg>Connected. Copy this code into the Celestia Poster window:</p>
+<code id=code></code>
+<script>
+  const q = new URLSearchParams(location.search);
+  const code = q.get('code');
+  document.getElementById('code').textContent = code || '';
+  if (!code) document.getElementById('msg').textContent = 'No code came back: ' + (q.get('error_description') || q.get('error') || 'unknown');
+</script>
